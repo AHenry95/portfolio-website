@@ -1,10 +1,20 @@
-/* used colors:
-background color (light grey): #D3D3D3
-links and normal state buttons (dark green): #00675c
-active links (burnt sienna): #ed6661
-visited links (lavender): #da80f9
-*/
-
+:root {
+--background-color: #D3D3D3;
+--link-color: #00675c;
+--link-color-active: #ed6661;
+--link-color-visited: #da80f9;
+--body-insert-text: #f5cd2e; 
+--body-insert-background: #000000;
+--table-background-header: #ADA9A9;
+--table-background-body: #E9E7E7;
+--table-border: #808080;
+--sun-ani-start: #edc655;
+--sun-ani-mid: #fcffad;
+--sun-ani-end: #f76414;
+--white-text: #ffffff;
+--liverpool-red: #DC0714;
+--captain-outline: #F8B93F;
+}
 /* general stylings --------------------------------------------- */
 
 *{
@@ -16,7 +26,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #D3D3D3;
+    background-color:var(--background-color);
     padding: 10px;
   }
   
@@ -34,10 +44,6 @@ body {
     font-size: 18px;
     font-weight: 700;
   }
-
-a {
-    color: #00675c;
-}
 
 /* Site Header --------------------------------------------- */
 
@@ -96,8 +102,8 @@ a {
 
 .body__insert{
     font-family: monospace;
-    color: #f5cd2e; 
-    background-color: #000000;
+    color: var(--body-insert-text); 
+    background-color: var(--body-insert-background);
     padding: 0 4px;
 }
 
@@ -115,22 +121,21 @@ a {
 }
 
 .about-me__table{
-    border: 1.5px solid #000000;
     border-collapse: collapse;
 }
 
 th {
     text-decoration: underline;
-    background-color: #ADA9A9;
+    background-color: var(--table-background-header);
 }
 
 th, td {
-    border: 1px solid #808080;
+    border: 1px solid var(--table-border);
     padding: 5px;
 }
 
 td {
-    background-color: #E9E7E7;
+    background-color: var(--table-background-body);
 }
 
 .balt-skyline {
@@ -140,13 +145,13 @@ td {
 
 @keyframes color-change {
     0% {
-        fill: #edc655;
+        fill: var(--sun-ani-start);
     }
     50% {
-        fill: #fcffad;
+        fill: var(--sun-ani-mid);
     }
     100% {
-        fill: #f76414
+        fill: var(--sun-ani-end);
     }
 }
 
@@ -182,12 +187,16 @@ td {
 
 /* links and buttons --------------------------------------------- */
 
+a {
+    color: var(--link-color);
+}
+
 a:visited {
-    color: #c353ea;
+    color: var(--link-color-visited);
 }
 
 a:active {
-    color: #ed6661;
+    color: var(--link-color-active);
 }
 
 a:hover {
@@ -198,8 +207,8 @@ a:hover {
 button, .button{
     border:none;
     font-family: inherit;
-    background-color: #357b70;
-    color: #FFFFFF;
+    background-color: var(--link-color);
+    color: var(--white-text);
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid rgba(0,0,0,0.3);
@@ -229,17 +238,17 @@ button:hover, .button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    color: #ffffff;
+    color: var(--white-text);
 }
 
 .grid__item {
-    background-color: #DC0714;
+    background-color:var(--liverpool-red);
     text-align: center;
     padding: 20px;
 }
 
 .grid__item:nth-child(8) {
-    border: 5px solid #F8B93F;
+    border: 5px solid var(--captain-outline);
 }
 
 .lfc-player {
