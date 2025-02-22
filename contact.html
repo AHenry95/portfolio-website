@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="page-header">
+            <img class="site-logo page-header__item" src="img/logo.png" aria-hidden="true">
+
+            <nav class=" main-nav page-header__item">
+                <ul role="menubar" class="nav-list">
+                    <li role="presentation"><a href="index.html" role="menuitem" class="nav-list">Home</a></li>
+                    <li role="presentation"><a href="about.html" role="menuitem" class="nav-list">About Me</a></li>
+                    <li role="presentation"><a href="work.html" role="menuitem" class="nav-list">Work</a></li>
+                    <li role="presentation"><a href="contact.html" role="menuitem" class="nav-list">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contact info">
+            <h1>Contact</h1>
+            <ul > 
+                <li>Email: <a href="mailto:ahenry.dev@gmail.com">ahenry.dev@gmail.com</a></li>
+                <li><span id="phone-label">Phone:</span><a href="tel:+19193277011" aria-labeledby="phone-label"><span class="sr-only">Call</span>(919) 327-7011</a></li>
+            </ul>
+            <a href="mailto:ahenry.dev@gmail.com">Contact me!</a>
+        </div><br>
+
+        <div class="submission-form">
+            <form action="" method="post" id="contact-form">
+                <label class="standard-label" for="contact-email">*E-mail: </label>
+                <input type="email" id="contact-email" required><br>
+
+                <label class="standard-label" for="phone-number" role >Telephone: </label>
+                <input type="tel" id="phone-number" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br>
+
+                <label class="standard-label" for="contact-message">*Message: </label>
+                <textarea maxlength="240" id="contact-message" required></textarea><br>
+
+                <input type="submit" value="Send message">
+
+                <p>* designates a required field.</p>
+            </form>
+        </div>
+
+        <footer class="page-footer">
+            <p>Find me on:</p>
+            <div class="social-media">
+                <img src="img/github_icon.svg" alt="Github Logo">
+                <img src="img/linkedin_icon.svg" alt="LinkedIn Logo">
+                <img src="img/twitter_icon.svg" alt="Twitter Logo">
+            </div>
+        </footer>
+
+        <script src="js/tota11y.min.js"></script>
+    </body>
+</html>
