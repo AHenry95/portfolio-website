@@ -133,6 +133,7 @@ body {
 
 .about-me__table{
     border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 th {
@@ -157,6 +158,7 @@ td {
 .balt-skyline {
     width: 100%;
     height: auto;
+    margin-top: 20px;
 }
 
 @-webkit-keyframes color-change {
