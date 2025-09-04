@@ -12,8 +12,7 @@
 --sun-ani-mid: #fcffad;
 --sun-ani-end: #f76414;
 --white-text: #ffffff;
---liverpool-red: #DC0714;
---captain-outline: #F8B93F;
+--project-blue: #30448a;
 }
 /* general stylings --------------------------------------------- */
 
@@ -28,6 +27,7 @@ body {
     line-height: 1.6;
     background-color:var(--background-color);
     padding: 10px;
+    padding-top: 120px;
   }
   
   h1 {
@@ -51,6 +51,12 @@ body {
     display: flex;
     width: 100%;
     padding: 10px;
+    background-color: var(--white-text);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .page-header__item {
@@ -244,23 +250,57 @@ button:hover, .button:hover {
 }
 
 .grid__item {
-    background-color:var(--liverpool-red);
+    background-color: var(--project-blue);
     text-align: center;
     padding: 20px;
 }
 
-.grid__item:nth-child(8) {
-    border: 5px solid var(--captain-outline);
-}
-
-.lfc-player {
-    width: 70%;
-    height: auto;
-} 
-
 .grid-header {
     text-align: center;
     text-decoration: underline;
+}
+
+.portfolio_item_image {
+    width: 99%;
+    aspect-ratio: 16 / 9;
+    transition: all 0.3s ease;
+}
+
+.portfolio_item_image:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.portfolio_item_image:active {
+    opacity: 0.6;
+    transform: scale(0.95)
+}
+
+/* portfolio pages ------------------------------------------- */
+#project_header {
+    border-bottom: 4px solid var(--project-blue);
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+}
+
+#project_header h1 {
+    color: var(--project-blue);
+    margin: 0;
+}
+
+.project_description {
+    margin-bottom: 40px;
+}
+
+.project-image-container {
+    text-align: center;
+}
+#project_sample_image {
+    width: 90%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
 }
 
 /* media queries --------------------------------------------- */

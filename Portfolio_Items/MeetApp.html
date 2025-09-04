@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Meet App</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="page-header">
+            <img class="site-logo page-header__item" src="../img/logo.png" aria-hidden="true">
+
+            <nav class=" main-nav page-header__item">
+                <ul role="menubar" class="nav-list">
+                    <li role="presentation"><a href="index.html" role="menuitem" class="nav-list">Home</a></li>
+                    <li role="presentation"><a href="about.html" role="menuitem" class="nav-list">About Me</a></li>
+                    <li role="presentation"><a href="work.html" role="menuitem" class="nav-list">Work</a></li>
+                    <li role="presentation"><a href="contact.html" role="menuitem" class="nav-list">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="project_header">
+            <h1>Meet App</h1>
+        </div>
+        
+        <div class="project_description">
+            <p>
+                The Meet App is a serverless, progressive web application (PWA) built with React that enables users to discover and explore upcoming events in their area.
+                The application used the Google Calender API to fetch real-time event data and presents it through an intuitve, response interface that included interactive data visualizations.
+                Built using test-drivien devlopment (TDD) methodology, the app combines modern web technologies with serverless architecture to deliver a fast and reliable user experience.
+                Users can search for events by city, choose the number of events displayed, and view detailed event information via the expandanble event cards.
+                The application features two dynamic charts: a scatterplot that displays the distrubituion of listed events across cities and a pie chart that displays the event genres by percentage.
+                The app uses AWS Lambda functions for authentication and API calls, implements Google OAuth 2 for secure access, and includes comprehensive PWA features such as offline access, home screen installation, and service worker caching. 
+            </p>
+        </div>
+
+        <div class="project-image-container">
+            <img id="project_sample_image" src ="../img/Meet_Screenshot.png">
+            <span>The meet app homeage, showing the search bar, data visualizations, and event cards.</span>
+        </div>
+
+        <div>
+            <h2 class="subheading">Features</h2>
+            <ul>
+                <li>City-Based Event Filtering</li>
+                <li>Event Details Toggle</li>
+                <li>Customizable Event Count</li>
+                <li>PWA Installation</li>
+                <li>Offline Access</li>
+                <li>Data Visulizations</li>
+            </ul>
+        </div>
+
+        <div>    
+            <h2 class="subheading">Technologies and Packages Used</h2>
+            <ul>
+                <li>React</li>
+                <li>AWS Lambda</li>
+                <li>Google OAuth</li>
+                <li>Google Calender API</li>
+                <li>Jest</li>
+                <li>React Testing Library</li>
+                <li>Cucumber</li>
+                <li>Puppeteer</li>
+                <li>Vite</li>
+                <li>Atatus</li>
+                
+            </ul>
+        </div>
+
+        <div>
+            <h3>Links</h3>
+            <a href="https://https://github.com/AHenry95/meet">GitHub Respository</a><br>
+            <a href="https://meet-chi-eight.vercel.app/">Live Application (deployed with Vercel)</a>
+        </div>
+
+
+        <footer class="page-footer">
+            <p>Find me on:</p>
+            <div class="social-media">
+                <img src="../img/github_icon.svg" alt="Github Logo">
+                <img src="../img/linkedin_icon.svg" alt="LinkedIn Logo">
+                <img src="../img/twitter_icon.svg" alt="Twitter Logo">
+            </div>
+        </footer>
+    </body>
+</html>
