@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Chat App</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="page-header">
+            <img class="site-logo page-header__item" src="../img/logo.png" aria-hidden="true">
+
+            <nav class=" main-nav page-header__item">
+                <ul role="menubar" class="nav-list">
+                    <li role="presentation"><a href="../index.html" role="menuitem" class="nav-list">Home</a></li>
+                    <li role="presentation"><a href="../about.html" role="menuitem" class="nav-list">About Me</a></li>
+                    <li role="presentation"><a href="../work.html" role="menuitem" class="nav-list">Work</a></li>
+                    <li role="presentation"><a href="../contact.html" role="menuitem" class="nav-list">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="project_header">
+            <h1>Chat App</h1>
+        </div>
+        
+        <div class="project_description">
+            <p>
+                Chat App is a real-time messaging application built with React Native and Expo, demonstrating modern mobile development practices & capabilities.
+                The app also features Firebase integration for real-time data synchronization, secure anonymous authentication, and cloud storage for media files.
+                The app is designed to work seamlessly on both iOS and Android devices using Expo Go.
+                Users can send text messages, images (both from their device library or taken with their camera), and they can send their location, which will be displayed in a rendered map in the chat.
+                The application can detect if the user's device is connected to the internet or not, and if not will display cached messages until the device is connected to the internet again.
+            </p>
+        </div>
+
+        <div class="project-image-container">
+            <img class="project_sample_image" src ="../img/chatapp-start.png">
+            <span>The Chat App Welcome Screen, where users can enter their username, select a background color, and move to the chat view.</span>
+            
+            <div class="video-container bottom">
+                <div class="video-wrapper">
+                    <iframe
+                        class="youtube-video"
+                        src="https://www.youtube.com/embed/-zbAllICd7s"
+                        title="Chat App Demo"
+                        frameborder="0"
+                    >    
+                    </iframe>
+                </div>
+                <p>A demonstration of the Chat App, including sending images and location.</p>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="subheading">Features</h2>
+            <ul>
+                <li>Real Time Messaging</li>
+                <li>Firebase/Firestore Integration</li>
+                <li>Anonymous User Authentication</li>
+                <li>Image Sharing from Camera or Photo Library</li>
+                <li>Location Sharing Featuring Interactive Maps</li>
+                <li>Message Caching + Offline Cached Message Display</li>
+                <li>Cross-Platform (iOS/Android) Support</li>
+            </ul>
+        </div>
+
+        <div>    
+            <h2 class="subheading">Technologies and Packages Used</h2>
+            <ul>
+                <li>React Native 0.76.9</li>
+                <li>Expo SDK 52</li>
+                <li>Firebase 10.3.1</li>
+                <li>React Navigation 6.1.17</li>
+                <li>React Native Gifted Chat 2.3.0</li>
+                <li>AsyncStorage 1.23.1</li>
+                <li>React Native NetInfo 11.4.1</li>
+                <li>Expo Image Picker 16.0.3</li>
+                <li>Expo Location 18.0.2</li>
+                <li>Expo Media Library 17.0.6</li>
+                <li>React Native Safe Area Context</li>
+                <li>React Native Screens</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Links</h3>
+            <a href="https://github.com/AHenry95/chat-app">GitHub Respository</a>
+        </div>
+
+        <footer class="page-footer">
+            <p>Find me on:</p>
+            <div class="social-media">
+                <img src="../img/github_icon.svg" alt="Github Logo">
+                <img src="../img/linkedin_icon.svg" alt="LinkedIn Logo">
+                <img src="../img/twitter_icon.svg" alt="Twitter Logo">
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>myFlix - React</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="page-header">
+            <img class="site-logo page-header__item" src="../img/logo.png" aria-hidden="true">
+
+            <nav class=" main-nav page-header__item">
+                <ul role="menubar" class="nav-list">
+                    <li role="presentation"><a href="../index.html" role="menuitem" class="nav-list">Home</a></li>
+                    <li role="presentation"><a href="../about.html" role="menuitem" class="nav-list">About Me</a></li>
+                    <li role="presentation"><a href="../work.html" role="menuitem" class="nav-list">Work</a></li>
+                    <li role="presentation"><a href="../contact.html" role="menuitem" class="nav-list">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="project_header">
+            <h1>myFlix - React</h1>
+        </div>
+        
+        <div class="project_description">
+            <p>
+                myFlix is a client React application that allows users to browse and discover information about their favorite movies.
+                The application provides access to data to movies accessed via the <a href="movie_api.html">Movie API</a>, including titles, directors, actors, and release years for each movie.
+                Additionally, users can view information about each director and genre included in the database.
+                myFlix is built with modern web technologies, and features a responsive design powered by React Bootstrap.
+                Users can create and manage personal accounts, including the ability to manage a list of favorite movies, that are visible on their profile.
+                The application allows for the filtering of movies displayed to the user in the main movie view, allowing users to easily view all movies that meet their chosen criteria (i.e., director, genre).
+            </p>
+        </div>
+
+       <div class="project-image-container">
+            <img class="project_sample_image" src ="../img/myflix-react-mainview.png">
+            <span>The MainView component, displaying all the movies from the database, with not filtering applied</span>
+
+            <img class="project_sample_image bottom" src ="../img/myflix-react-movieview.png">
+            <span>The MovieView component, displaying detailed information about a movie</span>
+
+            <img class="project_sample_image bottom" src ="../img/myflix-react-userview.png">
+            <span>The UserView component, displaying information about a user.</span>
+        </div>
+
+        <div>
+            <h2 class="subheading">Features</h2>
+            <ul>
+                <li>User Authentication (Registration/Login)</li>
+                <li>Movie Card Display</li>
+                <li>Movie Search Function</li>
+                <li>Movie Filtering Function</li>
+                <li>Detailed Information Available for Each Movie</li>
+                <li>User Favorites Management</li>
+                <li>User Profile Management</li>
+                <li>Responsive Design for All Devices</li>
+            </ul>
+        </div>
+
+        <div>    
+            <h2 class="subheading">Technologies and Packages Used</h2>
+            <ul>
+                <li>React 19.1.0</li>
+                <li>React DOM 19.1.0</li>
+                <li>React Router 7.7.0</li>
+                <li>React Bootstrap 5.3.7</li>
+                <li>Parcel/Transformer-SASS 2.15.4</li>
+                <li>PropTypes 15.8.1</li>
+                <li><a href="movie_api.html">Movie API</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Links</h3>
+            <a href="https://github.com/AHenry95/myFlix-Client">GitHub Respository</a><br>
+            <a href="https://myflix-ah.netlify.app/login/">Live Application (deployed with Netlify)</a>
+        </div>
+
+        <footer class="page-footer">
+            <p>Find me on:</p>
+            <div class="social-media">
+                <img src="../img/github_icon.svg" alt="Github Logo">
+                <img src="../img/linkedin_icon.svg" alt="LinkedIn Logo">
+                <img src="../img/twitter_icon.svg" alt="Twitter Logo">
+            </div>
+        </footer>
+    </body>
+</html>

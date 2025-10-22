@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Pokedex</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="page-header">
+            <img class="site-logo page-header__item" src="../img/logo.png" aria-hidden="true">
+
+            <nav class=" main-nav page-header__item">
+                <ul role="menubar" class="nav-list">
+                    <li role="presentation"><a href="../index.html" role="menuitem" class="nav-list">Home</a></li>
+                    <li role="presentation"><a href="../about.html" role="menuitem" class="nav-list">About Me</a></li>
+                    <li role="presentation"><a href="../work.html" role="menuitem" class="nav-list">Work</a></li>
+                    <li role="presentation"><a href="../contact.html" role="menuitem" class="nav-list">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="project_header">
+            <h1>Pokédex</h1>
+        </div>
+        
+        <div class="project_description">
+            <p>
+                This project is a pokedex that allows users to view information about any of the 151 "first generation" Pokémon.
+                In its current iteration, the app displays a basic list of buttons, each of which contains the name of a Pokémon, ordered by their number (not displayed on the button).
+                When clicked, each button displays the Pokémon's name, their sprite image, and their height in meters.
+                All of the Pokémon data is fetched from the <a href="https://pokeapi.co/">PokéAPI</a>.
+                This project was my first time working with an API to fetch data to be displayed, skills which I have used throughout all of the other projects I have worked on.
+                Much of the styling of the app is provided via <a href="https://getbootstrap.com/">Bootstrap</a>, which was my first time working with an external library to provide styling for an app.  
+            </p>
+            <p>
+                I intend to return to this project very soon and improve the visual display and increase the number of features offered to users.
+                You can view more details about planned improvements in the project's <a href="https://github.com/AHenry95/pokedex/blob/main/README.md">README</a>. 
+                Please feel free to provide comments or suggest features to be added via <a href="../contact.html">my contact form</a>.
+                Additional insights are always welcome and much appreciated!      
+            </p>
+        </div>
+
+        <div class="project-image-container">
+            <img class="project_sample_image" src ="../img/pokedex_main.png">
+            <span>The Pokédex homepage, showing a list of Pokémon</span>
+
+            <img class="project_sample_image bottom" src ="../img/pokedex_modal.png">
+            <span>The modal displaying information about the Pokémon Squirtle</span>
+        </div>
+
+        <div>
+            <h2 class="subheading">Features</h2>
+            <ul>
+                <li>List of all 151 first generation Pokémon</li>
+                <li>Basic information provided for each Pokémon</li>
+            </ul>
+        </div>
+
+        <div>    
+            <h2 class="subheading">Technologies and Packages Used</h2>
+            <ul>
+                <li>PokéAPI</li>
+                <li>Bootstrap 5.3.5</li>
+                <li>jQuery 3.5.1</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Links</h3>
+            <a href="https://github.com/AHenry95/pokedex">GitHub Respository</a><br>
+            <a href="https://ahenry95.github.io/pokedex/">Live Application</a>
+        </div>
+
+        <footer class="page-footer">
+            <p>Find me on:</p>
+            <div class="social-media">
+                <img src="../img/github_icon.svg" alt="Github Logo">
+                <img src="../img/linkedin_icon.svg" alt="LinkedIn Logo">
+                <img src="../img/twitter_icon.svg" alt="Twitter Logo">
+            </div>
+        </footer>
+    </body>
+</html>
