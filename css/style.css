@@ -90,6 +90,11 @@ body {
     text-align: center;
 }
 
+.social-media img {
+    height: 30px;
+    width: 30px;
+}
+
 /* home page --------------------------------------------- */
 
 .profile {
@@ -122,27 +127,53 @@ body {
     justify-content: center;
     text-align: center;
     width: 80%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.about-me__table{
-    border-collapse: collapse;
-    margin-bottom: 20px;
+.skills-section {
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-th {
-    text-decoration: underline;
-    background-color: var(--table-background-header);
+.skills-category {
+    margin-bottom: 30px;
 }
 
-th, td {
-    border: 1px solid var(--table-border);
-    padding: 5px;
+.skills-category h3 {
+    color: #2b2b2b;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-weight: 700;
+    border-bottom: 2px solid #357b70;
+    padding-bottom: 8px;
 }
 
-td {
-    background-color: var(--table-background-body);
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    row-gap: 15px;
+    justify-content: center;
+}
+
+.skill-tag {
+    background-color: #357b70;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 4px;
+    border: 2px solid transparent;
+}
+
+.skill-tag:hover {
+    background-color: #2b6359;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.2);
+    border-color: #1a4038;
 }
 
 .balt-skyline {
