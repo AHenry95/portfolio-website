@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Recipe App</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/style.production.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="page-header">
+            <img class="site-logo page-header__item" src="../img/logo.png" aria-hidden="true">
+
+            <nav class=" main-nav page-header__item">
+                <ul role="menubar" class="nav-list">
+                    <li role="presentation"><a href="../index.html" role="menuitem" class="nav-list">Home</a></li>
+                    <li role="presentation"><a href="../about.html" role="menuitem" class="nav-list">About Me</a></li>
+                    <li role="presentation"><a href="../work.html" role="menuitem" class="nav-list">Work</a></li>
+                    <li role="presentation"><a href="../contact.html" role="menuitem" class="nav-list">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="project_header">
+            <h1>Recipe App</h1>
+        </div>
+        
+        <div class="project_description">
+            <p>
+                The Recipe App is a full-stack Django web application for discovering, creating, and sharing recipes.
+                Users can browse a collection of recipes, create accounts to save their favorites, and upload their own recipes for others to see.
+                The application features a comprensive search system with data visualization capabilities, allowing users to filter recipes by name, ingredient, difficulty level, or cooking time.
+                The application automatically calculates recioe difficulty based on cooking time and ingredient count, providing users with helpful feedback when browsing recipes.
+            </p>
+            <p>
+                This project was my first foray into developing a web application using Python and using Django along with that.
+                The project incorporates user authentication, CRUD operations, database relationships, and deployment to a production environment (using Heroku).
+                In developing this porject, I learned a number of new skills, inclduing working with Django's authentication systems, creating data visualiztion with Panadas and Matplotlib, and deploying a Django application to Heroku (amoung other skills).
+                Please feel free to provide comments, feedback, or suggest features via <a href="../contact.html">my contact form</a>.
+            </p>
+        </div>
+
+        <div class="project-image-container">
+            <img class="project_sample_image" src ="../img/recipe-app_home.png" alt="Recipe App homepage showing recipe cards">
+            <span>The Recipe App homepage displaying recipe cards with difficulty badges</span>
+
+            <img class="project_sample_image bottom" src ="../img/recipe-app_detail.png" alt="Recipe detail page showing recipe ingredients and instructions">
+            <span>Recipe detail page with ingredients, instructions, and favorite button</span>
+        </div>
+
+        <div>
+            <h2 class="subheading">Features</h2>
+            <ul>
+                <li>User registration and authentication system</li>
+                <li>Create, edit, and delete your own recipes</li>
+                <li>Automatic difficulty rating based on cooking time and number of ingredients</li>
+                <li>Save favorite recipes to profile for later use</li>
+                <li>Advanced search capability with mutliple filter options</li>
+                <li>Data visualization for search results, with bar, pie, and line charts available</li>
+                <li>Responsive design for desktop and mobile devices</li>
+                <li>User profile page displaying authored and favorited recipes</li>
+            </ul>
+        </div>
+
+        <div>    
+            <h2 class="subheading">Technologies and Packages Used</h2>
+            <ul>
+                <li>Python 3.11</li>
+                <li>Django 4.2</li>
+                <li>PostgreSQL (production) / SQLite (development)</li>
+                <li>Pandas and Matplotlib for data visualization</li>
+                <li>Pillow for image processing</li>
+                <li>Whitenoice for static file serving</li>
+                <li>gunicon production server</li>
+                <li>Heroku deployment platform</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Links</h3>
+            <a href="https://github.com/AHenry95/recipe_app">GitHub Respository</a><br>
+            <a href="https://sheltered-basin-42687-d57135d9635e.herokuapp.com/">Live Application</a>
+        </div>
+
+       <footer class="page-footer">
+            <p>Find me on:</p>
+            <div class="social-media">
+                <a href="https://github.com/AHenry95"><img src="../img/github_icon.svg" alt="Github Logo"></a>
+                <a href="https://www.linkedin.com/in/andrew-henry-78a3621a9/"><img src="../img/linkedin_icon.svg" alt="LinkedIn Logo"></a>
+                <a href="https://x.com/Andrewplaydrums"><img src="../img/twitter_icon.svg" alt="Twitter Logo"></a>
+                <a href="https://medium.com/@ahenry.dev"><img src="../img/Medium-Icon-Black.png" alt="Medium Logo"></a>
+            </div>
+        </footer>
+    </body>
+</html>
